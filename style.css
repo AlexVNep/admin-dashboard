@@ -12,33 +12,49 @@
     height: 100vh;
 }
 
+
 .sidebar {
     grid-row: 1 / 3;
-    border: 2px solid black;
-
     display: grid;
     grid-template: 1fr 3fr 3fr / 1fr;
+    align-self: start;
+    /* border: 2px solid black; */
 }
 
 .sidebar-header {
     display: grid;
     grid-template-columns: 1fr 3fr;
+    justify-self: center;
+    align-self: center;
+    /* border: 2px solid black; */
 }
+
+ .icon {
+    width: 50px;
+    height: 50px;
+ }
+
+ .sidebar-title,
+ .nav-title,
+ .options-title {
+    align-self: center;
+    margin-left: 15px;
+ }
 
 .nav {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    border: 1px solid black;
+    justify-self: center;
+    align-self: center;
+    /* border: 2px solid black; */
 }
 
 .options {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    border: 1px solid black;
-}
-
-img {
-    border: 1px solid red;
+    justify-self: center;
+    align-self: center;
+    /* border: 1px solid black; */
 }
 
 .header {
